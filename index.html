@@ -96,60 +96,62 @@ tr:last-child td{border-bottom:0}
     <h1>trading<em>bot</em></h1>
     <div class="stamp">paper account</div>
   </div>
-  <p class="meta">생성 2026-08-20 06:19 · 워치리스트 <code>AAPL AMD AMZN ARM COIN MU NVDA PLTR TSLA</code> · 벤치마크 <code>SPY</code></p>
+  <p class="meta">생성 2026-08-20 06:21 · 워치리스트 <code>AAPL AMD AMZN ARM COIN MU NVDA PLTR TSLA</code> · 벤치마크 <code>SPY</code></p>
   <div class="rules"><span>종목당 10%</span><span>총 투자 50%</span><span>확신도 ≥ 0.6</span><span>손익비 ≥ 1.5</span><span>목표가 ≤ +30%</span><span>레버리지 없음</span><span>공매도 없음</span></div>
-  <div class="counts"><div><b>6</b><span>실행</span></div><div><b>6</b><span>분석</span></div><div><b>2</b><span>매수</span></div><div><b>0</b><span>매도</span></div><div><b>-0.00%</b><span>봇</span></div><div><b>-0.03%</b><span>SPY</span></div><div><b>+0.03%p</b><span>차이</span></div></div>
+  <div class="counts"><div><b>7</b><span>실행</span></div><div><b>6</b><span>분석</span></div><div><b>2</b><span>매수</span></div><div><b>0</b><span>매도</span></div><div><b>-0.00%</b><span>봇</span></div><div><b>-0.03%</b><span>SPY</span></div><div><b>+0.03%p</b><span>차이</span></div></div>
 
   <h2><span class="num">01</span>파이프라인</h2>
   <p class="sub">매일 자정(KST) GitHub Actions가 이 순서로 한 바퀴 돈다. 주문은 게이트를 통과해야만 나간다.</p>
   <div class="canvas">
-<svg class="diagram" viewBox="0 0 1160 260" role="img" aria-label="파이프라인 도식">
+<svg class="diagram" viewBox="0 0 1200 250" role="img" aria-label="파이프라인 도식">
   <defs>
     <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
             orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#1c1a17"/>
     </marker>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/>
+    </marker>
   </defs>
+  <text x="600" y="26" class="d-cap" fill="#6b6153" text-anchor="middle">
+    매일 00:00 KST · GITHUB ACTIONS · 평일
+  </text>
   <g stroke="#1c1a17" stroke-width="2.4" fill="#fffdf7">
-    <rect x="14"  y="60" width="176" height="74" rx="4"/>
-    <rect x="248" y="60" width="196" height="74" rx="4"/>
-    <rect x="770" y="60" width="176" height="74" rx="4"/>
-    <rect x="978" y="60" width="168" height="74" rx="4"/>
+    <rect x="16"  y="64" width="180" height="76" rx="4"/>
+    <rect x="236" y="64" width="190" height="76" rx="4"/>
+    <rect x="716" y="64" width="180" height="76" rx="4"/>
+    <rect x="936" y="64" width="180" height="76" rx="4"/>
   </g>
-  <path d="M502,97 L640,40 L778,97 L640,154 Z" fill="#fdece3" stroke="#c2410c" stroke-width="2.6"/>
+  <path d="M456,102 L566,48 L676,102 L566,156 Z" fill="#fdece3" stroke="#c2410c" stroke-width="2.6"/>
   <g class="d-title" fill="#1c1a17" text-anchor="middle">
-    <text x="102"  y="90">후보 선정</text>
-    <text x="346"  y="90">AI 분석</text>
-    <text x="640"  y="92" fill="#c2410c">리스크 게이트</text>
-    <text x="858"  y="90">주문</text>
-    <text x="1062" y="90">기록·알림</text>
+    <text x="106"  y="97">후보 선정</text>
+    <text x="331"  y="97">AI 분석</text>
+    <text x="566"  y="99" fill="#c2410c">리스크 게이트</text>
+    <text x="806"  y="97">주문</text>
+    <text x="1026" y="97">기록·알림</text>
   </g>
   <g class="d-lbl" fill="#6b6153" text-anchor="middle">
-    <text x="102"  y="110">오래 안 본 종목 3개</text>
-    <text x="102"  y="125">yfinance · LLM 안 씀</text>
-    <text x="346"  y="110">TradingAgents</text>
-    <text x="346"  y="125">market + news</text>
-    <text x="640"  y="112" fill="#c2410c">검사 10개</text>
-    <text x="858"  y="110">Alpaca 모의계좌</text>
-    <text x="858"  y="125">소수점 시장가</text>
-    <text x="1062" y="110">runs.jsonl</text>
-    <text x="1062" y="125">텔레그램 · 이 페이지</text>
+    <text x="106"  y="117">오래 안 본 종목 3개</text>
+    <text x="106"  y="132">yfinance · LLM 안 씀</text>
+    <text x="331"  y="117">TradingAgents</text>
+    <text x="331"  y="132">market + news</text>
+    <text x="566"  y="119" fill="#c2410c">검사 10개</text>
+    <text x="806"  y="117">Alpaca 모의계좌</text>
+    <text x="806"  y="132">소수점 시장가</text>
+    <text x="1026" y="117">runs.jsonl</text>
+    <text x="1026" y="132">텔레그램 · 이 페이지</text>
   </g>
   <g stroke="#1c1a17" stroke-width="2.4" marker-end="url(#ar)" fill="none">
-    <path d="M190,97 L242,97"/>
-    <path d="M444,97 L496,97"/>
-    <path d="M778,97 L764,97"/>
-    <path d="M946,97 L972,97"/>
+    <path d="M196,102 L230,102"/>
+    <path d="M426,102 L450,102"/>
+    <path d="M676,102 L710,102"/>
+    <path d="M896,102 L930,102"/>
   </g>
-  <path d="M640,154 L640,196 L1062,196 L1062,140" stroke="#c2410c" stroke-width="2.4"
-        fill="none" stroke-dasharray="6 4" marker-end="url(#ar)"/>
-  <text x="820" y="212" class="d-lbl" fill="#c2410c" text-anchor="middle">
+  <path d="M566,156 L566,202 L1026,202 L1026,146" stroke="#c2410c" stroke-width="2.4"
+        fill="none" stroke-dasharray="6 4" marker-end="url(#ar2)"/>
+  <text x="796" y="222" class="d-lbl" fill="#c2410c" text-anchor="middle">
     차단 — 사유를 남기고 주문하지 않는다
-  </text>
-  <path d="M14,40 L14,24 L946,24" stroke="#1c1a17" stroke-width="2.4" fill="none"
-        stroke-dasharray="4 4"/>
-  <text x="480" y="18" class="d-cap" fill="#6b6153" text-anchor="middle">
-    매일 00:00 KST · GITHUB ACTIONS · 평일
   </text>
 </svg>
 </div>
@@ -166,10 +168,10 @@ tr:last-child td{border-bottom:0}
         stroke="#e3d8c4" stroke-width="2"/>
   <text x="28" y="213.5" class="d-lbl" fill="#6b6153"
         text-anchor="end">0%</text>
-  <polyline points="34.0,209.5 240.4,226.0 446.8,219.5 653.2,185.6 859.6,219.5 1066.0,219.5" fill="none" stroke="#78716c" stroke-width="2.4"
+  <polyline points="34.0,209.5 206.0,226.0 378.0,219.5 550.0,185.6 722.0,219.5 894.0,219.5 1066.0,219.5" fill="none" stroke="#78716c" stroke-width="2.4"
             stroke-dasharray="6 4"/>
-  <polyline points="34.0,209.5 240.4,209.8 446.8,209.8 653.2,208.7 859.6,209.8 1066.0,209.8" fill="none" stroke="#0f766e" stroke-width="3.2"/>
-  <text x="34.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-19</text><text x="240.4" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-19</text><text x="446.8" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-19</text><text x="653.2" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text><text x="859.6" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text><text x="1066.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text>
+  <polyline points="34.0,209.5 206.0,209.8 378.0,209.8 550.0,208.7 722.0,209.8 894.0,209.8 1066.0,209.8" fill="none" stroke="#0f766e" stroke-width="3.2"/>
+  <text x="34.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-19</text><text x="206.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-19</text><text x="378.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-19</text><text x="550.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text><text x="722.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text><text x="894.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text><text x="1066.0" y="250" class="d-lbl" fill="#6b6153" text-anchor="middle">08-20</text>
   <g class="d-cap">
     <rect x="890" y="16" width="14" height="4" fill="#0f766e"/>
     <text x="910" y="23" fill="#1c1a17">BOT -0.00%</text>
@@ -183,5 +185,5 @@ tr:last-child td{border-bottom:0}
 
   <h2><span class="num">05</span>일별 기록</h2>
   <p class="sub">최신순. 차단된 판단도 사유와 함께 남긴다 — 나중에 검사를 조정할 근거다.</p>
-  <div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">14:49</span><span class="tag">DRY-RUN</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>AMD</b><span class="bits">현재 $466.23 · BUY 확신도 0.70 · 목표 $1,250.00 · 손절 <em class="miss">없음</em></span><span class="gnum">⑦</span><span class="why">손절가 없음 — 나갈 계획이 없는 매수는 하지 않는다</span><div class="note">데이터 센터의 107% 성장은 강력한 펀더멘털을 증명하며, 구글-마벨 파트너십에 의한 하락은 과도한 공포로 판단되어 분할 매수 기회로 활용합니다. (참조: News report, Risk-debate transcript)</div></div><div class="row buy"><span class="act">매수</span><b>ARM</b><span class="bits">현재 $249.28 · BUY 확신도 0.68 · 목표 $299.28 · 손절 $220.00</span><span class="why">매수 승인 $9,999.72 (확신도 0.68)</span><div class="note">Market research report와 News sentiment report에 따르면 200일선 우상향 및 MACD 히스토그램 반등(+1.04), 견조한 Q1 AI 펀더멘털이 하방을 지지하고 있습니다. 단기 수급 노이즈를 활용하여 진입 규모를 축소(0.35)한 분할 매수 접근이 타당합니다.</div></div><div class="row skip"><span class="act">관망</span><b>COIN</b><span class="bits">현재 $160.28 · BUY 확신도 0.75 · 손절 <em class="miss">없음</em></span><span class="gnum">⑦</span><span class="why">손절가 없음 — 나갈 계획이 없는 매수는 하지 않는다</span><div class="note">베이스 네트워크와 기관 수탁 사업을 통한 인프라 기업으로의 전환이 뚜렷하나, 규제 불확실성을 고려하여 분할 매수 전략으로 진입해야 합니다. (참조: Risk-debate transcript)</div></div></div><div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">06:19</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>-</b><span class="bits"></span><span class="why">장 마감</span></div></div><div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">04:13</span><span class="tag">DRY-RUN</span><span class="eq">$100,000.00</span></div><div class="row skip"><span class="act">관망</span><b>AAPL</b><span class="bits">현재 $315.58 · HOLD 확신도 0.75 · 손절 <em class="miss">없음</em></span><span class="gnum">③</span><span class="why">HOLD — 아무것도 하지 않음</span><div class="note">Apple Intelligence 기반 교체 수요의 실증적 데이터 부재와 강화된 반독점 규제 리스크가 공존하므로, 리스크 토론에서 제기된 &#x27;데이터 기반의 선별적 대응&#x27;을 위해 현 포지션 유지를 결정함.</div></div></div><div class="day"><div class="dh"><span class="date">2026-08-19</span><span class="clock">20:01</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>-</b><span class="bits"></span><span class="why">장 마감</span></div></div><div class="day"><div class="dh"><span class="date">2026-08-19</span><span class="clock">19:45</span><span class="eq">$99,997.17</span><span class="dn">-0.00%</span></div><div class="row skip"><span class="act">관망</span><b>GOOGL</b><span class="bits">현재 $345.01 · HOLD 확신도 0.85 · 목표 $352.47 · 손절 $332.16</span><span class="gnum">③</span><span class="why">HOLD — 아무것도 하지 않음</span><div class="note">시장 보고서상 MACD 하락 모멘텀과 50일 SMA 저항이 뚜렷하므로, 리스크-토론의 중립적 견해에 따라 확실한 추세 전환 확인 전까지 관망을 유지합니다.</div></div></div><div class="day"><div class="dh"><span class="date">2026-08-19</span><span class="clock">19:38</span><span class="eq">$99,997.96</span></div><div class="row buy"><span class="act">매수</span><b>AMZN</b><span class="bits">현재 $265.90 · BUY 확신도 0.85 · 손절 <em class="miss">없음</em></span><span class="why">매수 승인 $10,000.00 (확신도 0.85)</span><div class="note">AWS와 광고 부문의 고마진 구조 전환이 반독점 리스크를 상쇄하며 강력한 이익 성장을 견인하고 있음을 Risk-debate transcript를 통해 확인하여 매수를 결정함.</div></div></div>
+  <div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">14:49</span><span class="tag">DRY-RUN</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>AMD</b><span class="bits">현재 $466.23 · BUY 확신도 0.70 · 목표 $1,250.00 · 손절 <em class="miss">없음</em></span><span class="gnum">⑦</span><span class="why">손절가 없음 — 나갈 계획이 없는 매수는 하지 않는다</span><div class="note">데이터 센터의 107% 성장은 강력한 펀더멘털을 증명하며, 구글-마벨 파트너십에 의한 하락은 과도한 공포로 판단되어 분할 매수 기회로 활용합니다. (참조: News report, Risk-debate transcript)</div></div><div class="row buy"><span class="act">매수</span><b>ARM</b><span class="bits">현재 $249.28 · BUY 확신도 0.68 · 목표 $299.28 · 손절 $220.00</span><span class="why">매수 승인 $9,999.72 (확신도 0.68)</span><div class="note">Market research report와 News sentiment report에 따르면 200일선 우상향 및 MACD 히스토그램 반등(+1.04), 견조한 Q1 AI 펀더멘털이 하방을 지지하고 있습니다. 단기 수급 노이즈를 활용하여 진입 규모를 축소(0.35)한 분할 매수 접근이 타당합니다.</div></div><div class="row skip"><span class="act">관망</span><b>COIN</b><span class="bits">현재 $160.28 · BUY 확신도 0.75 · 손절 <em class="miss">없음</em></span><span class="gnum">⑦</span><span class="why">손절가 없음 — 나갈 계획이 없는 매수는 하지 않는다</span><div class="note">베이스 네트워크와 기관 수탁 사업을 통한 인프라 기업으로의 전환이 뚜렷하나, 규제 불확실성을 고려하여 분할 매수 전략으로 진입해야 합니다. (참조: Risk-debate transcript)</div></div></div><div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">06:21</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>-</b><span class="bits"></span><span class="why">장 마감</span></div></div><div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">06:19</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>-</b><span class="bits"></span><span class="why">장 마감</span></div></div><div class="day"><div class="dh"><span class="date">2026-08-20</span><span class="clock">04:13</span><span class="tag">DRY-RUN</span><span class="eq">$100,000.00</span></div><div class="row skip"><span class="act">관망</span><b>AAPL</b><span class="bits">현재 $315.58 · HOLD 확신도 0.75 · 손절 <em class="miss">없음</em></span><span class="gnum">③</span><span class="why">HOLD — 아무것도 하지 않음</span><div class="note">Apple Intelligence 기반 교체 수요의 실증적 데이터 부재와 강화된 반독점 규제 리스크가 공존하므로, 리스크 토론에서 제기된 &#x27;데이터 기반의 선별적 대응&#x27;을 위해 현 포지션 유지를 결정함.</div></div></div><div class="day"><div class="dh"><span class="date">2026-08-19</span><span class="clock">20:01</span><span class="eq">$99,997.17</span></div><div class="row skip"><span class="act">관망</span><b>-</b><span class="bits"></span><span class="why">장 마감</span></div></div><div class="day"><div class="dh"><span class="date">2026-08-19</span><span class="clock">19:45</span><span class="eq">$99,997.17</span><span class="dn">-0.00%</span></div><div class="row skip"><span class="act">관망</span><b>GOOGL</b><span class="bits">현재 $345.01 · HOLD 확신도 0.85 · 목표 $352.47 · 손절 $332.16</span><span class="gnum">③</span><span class="why">HOLD — 아무것도 하지 않음</span><div class="note">시장 보고서상 MACD 하락 모멘텀과 50일 SMA 저항이 뚜렷하므로, 리스크-토론의 중립적 견해에 따라 확실한 추세 전환 확인 전까지 관망을 유지합니다.</div></div></div><div class="day"><div class="dh"><span class="date">2026-08-19</span><span class="clock">19:38</span><span class="eq">$99,997.96</span></div><div class="row buy"><span class="act">매수</span><b>AMZN</b><span class="bits">현재 $265.90 · BUY 확신도 0.85 · 손절 <em class="miss">없음</em></span><span class="why">매수 승인 $10,000.00 (확신도 0.85)</span><div class="note">AWS와 광고 부문의 고마진 구조 전환이 반독점 리스크를 상쇄하며 강력한 이익 성장을 견인하고 있음을 Risk-debate transcript를 통해 확인하여 매수를 결정함.</div></div></div>
 </div>
